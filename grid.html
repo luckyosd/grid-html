@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-html</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 200px) 50px 50px;
+            gap: 20px;
+        }
+        
+        .box {
+            background-color: gray;
+        }
+        
+        #bpx-1 {
+            grid-row: span 5;
+        }
+        
+        #bpx-6,
+        #bpx-7,
+        #bpx-9,
+        #bpx-10 {
+            background-color: brown;
+        }
+        
+        #bpx-11,
+        #bpx-12 {
+            grid-column: span 3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="bpx-1">box-1</div>
+        <div class="box" id="bpx-2">box-2</div>
+        <div class="box" id="bpx-3">box-3</div>
+        <div class="box" id="bpx-4">box-4</div>
+        <div class="box" id="bpx-5">box-5</div>
+        <div class="box" id="bpx-6">box-6</div>
+        <div class="box" id="bpx-7">box-7</div>
+        <div class="box" id="bpx-8">box-8</div>
+        <div class="box" id="bpx-9">box-9</div>
+        <div class="box" id="bpx-10">box-10</div>
+        <div class="box" id="bpx-11">box-11</div>
+        <div class="box" id="bpx-12">box-12</div>
+    </div>
+
+</body>
+
+</html>
